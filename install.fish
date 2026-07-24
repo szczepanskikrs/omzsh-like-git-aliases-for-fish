@@ -1,6 +1,6 @@
 #!/usr/bin/env fish
 
-set -l script_dir (status dirname)
+set -l script_dir (realpath (dirname (status filename)))
 set -l source_file "$script_dir/conf.d/git_aliases.fish"
 set -l target_dir "$HOME/.config/fish/conf.d"
 set -l target_file "$target_dir/git_aliases.fish"
