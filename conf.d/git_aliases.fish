@@ -1,6 +1,6 @@
 # Oh My Zsh Git aliases for Fish Shell (Cross-platform: Linux & macOS)
 
-# --- Pomocnicze funkcje ---
+# Helper functions
 function __git_current_branch
     command git branch --show-current 2>/dev/null
 end
@@ -43,7 +43,7 @@ function gbda
     end
 end
 
-# --- Skróty (Fish Abbreviations) ---
+# Abbreviations
 
 # Status & General
 abbr -a g git

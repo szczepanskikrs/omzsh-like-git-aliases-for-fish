@@ -9,9 +9,9 @@ mkdir -p "$target_dir"
 
 if test -f "$source_file"
     ln -sf "$source_file" "$target_file"
-    echo "✓ Utworzono dowiązanie symboliczne: $target_file -> $source_file"
-    echo "✓ Skróty Oh My Zsh Git dla Fish Shell zostały pomyślnie zainstalowane!"
+    echo "Linked $source_file -> $target_file"
+    echo "Done."
 else
-    echo "✗ Błąd: Nie znaleziono pliku $source_file"
+    echo "Error: $source_file not found."
     exit 1
 end
